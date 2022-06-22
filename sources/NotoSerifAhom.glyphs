@@ -29,7 +29,7 @@ code = "a_ahom alt_ba_ahom alt_ga_ahom alt_ta_ahom ba_ahom bha_ahom cha_ahom da_
 name = class18;
 }
 );
-copyright = "Copyright 2018-2021 Google Inc. All Rights Reserved.";
+copyright = "Copyright 2018-2022 Google Inc. All Rights Reserved.";
 customParameters = (
 {
 name = glyphOrder;
@@ -162,7 +162,7 @@ value = "Noto is a trademark of Google Inc.";
 },
 {
 name = versionString;
-value = "Version 2.003";
+value = "Version 2.005";
 }
 );
 date = "2015-01-16 16:27:17 +0000";
@@ -7300,5 +7300,5 @@ manufacturer = "Monotype Imaging Inc.";
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 4;
+versionMinor = 5;
 }
