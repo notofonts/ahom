@@ -1,7 +1,7 @@
 {
 .appVersion = "3072";
 DisplayStrings = (
-"/virama_ahom"
+"/t_ja_ahom"
 );
 classes = (
 {
@@ -180,7 +180,7 @@ code = "lookup SinglePositioning1 {\012    lookupflag 0;\012    ;\012    pos dot
 name = SinglePositioning1;
 },
 {
-code = "lookup SinglePositioning2 {\012    lookupflag 0;\012    ;\012    # Original source: 1 \012    pos [a_ahom alt_ba_ahom alt_ga_ahom alt_ta_ahom ba_ahom bha_ahom cha_ahom da_ahom dha_ahom dottedCircle ga_ahom ga_ahom.alt gha_ahom ha_ahom ja_ahom jha_ahom jha_ahom.alt ka_ahom kha_ahom khra_ahom la_ahom ma_ahom na_ahom nga_ahom nya_ahom pa_ahom pha_ahom phra_ahom ra_ahom sa_ahom t_ja_ahom ta_ahom tha_ahom] <250 0 250 0>;\012} SinglePositioning2;\012";
+code = "lookup SinglePositioning2 {\012    lookupflag 0;\012    ;\012    # Original source: 1 \012    pos [a_ahom alt_ba_ahom alt_ga_ahom alt_ta_ahom ba_ahom bha_ahom cha_ahom da_ahom dha_ahom dottedCircle ga_ahom ga_ahom.alt gha_ahom ha_ahom ja_ahom jha_ahom jha_ahom.alt ka_ahom kha_ahom khra_ahom la_ahom ma_ahom na_ahom nga_ahom nya_ahom pa_ahom pha_ahom phra_ahom ra_ahom sa_ahom ta_ahom tha_ahom] <250 0 250 0>;\012    pos t_ja_ahom <0 0 -150 0>;\012} SinglePositioning2;\012";
 name = SinglePositioning2;
 },
 {
@@ -202,7 +202,7 @@ code = "\012# o/u ligatures\012sub uSign_ahom oSign_ahom by o_u_ahom;\012sub oSi
 name = ccmp;
 },
 {
-code = "sub kha_ahom medialLigaRa_ahom by khra_ahom;\012sub alt_ta_ahom ja_ahom by t_ja_ahom;\012sub pha_ahom medialLigaRa_ahom by phra_ahom;\012";
+code = "sub kha_ahom medialLigaRa_ahom by khra_ahom;\012sub pha_ahom medialLigaRa_ahom by phra_ahom;\012\012lookup tja {\012lookupflag IgnoreMarks;\012sub alt_ta_ahom ja_ahom by t_ja_ahom;\012} tja;\012";
 name = rlig;
 },
 {
@@ -224,6 +224,10 @@ name = mark;
 {
 code = "# Automatic Code Start\012";
 name = blwm;
+},
+{
+code = "# Automatic Code Start";
+name = abvm;
 }
 );
 fontMaster = (
@@ -6700,13 +6704,13 @@ category = Letter;
 },
 {
 glyphname = t_ja_ahom;
-lastChange = "2019-08-07 17:52:21 +0000";
+lastChange = "2022-06-22 11:25:40 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor10;
-position = "{0, 0}";
+position = "{1100, 0}";
 },
 {
 name = Anchor11;
@@ -6714,7 +6718,7 @@ position = "{1060, 0}";
 },
 {
 name = Anchor12;
-position = "{0, 0}";
+position = "{975, 0}";
 },
 {
 name = Anchor13;
@@ -6738,7 +6742,7 @@ position = "{1080, 0}";
 },
 {
 name = Anchor9;
-position = "{0, 0}";
+position = "{712, 0}";
 }
 );
 layerId = UUID0;
@@ -6832,6 +6836,7 @@ width = 1142;
 }
 );
 category = Letter;
+subCategory = Other;
 },
 {
 glyphname = i_u_ahom;
