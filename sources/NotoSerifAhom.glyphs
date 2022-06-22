@@ -1,7 +1,7 @@
 {
-.appVersion = "3109";
+.appVersion = "3072";
 DisplayStrings = (
-"/virama_ahom"
+"/t_ja_ahom"
 );
 classes = (
 {
@@ -29,7 +29,7 @@ code = "a_ahom alt_ba_ahom alt_ga_ahom alt_ta_ahom ba_ahom bha_ahom cha_ahom da_
 name = class18;
 }
 );
-copyright = "Copyright 2018-2021 Google Inc. All Rights Reserved.";
+copyright = "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/ahom)";
 customParameters = (
 {
 name = glyphOrder;
@@ -141,16 +141,20 @@ name = "Don't use Production Names";
 value = 1;
 },
 {
+name = "Use Typo Metrics";
+value = 1;
+},
+{
 name = description;
 value = "Designed by Monotype design team.";
 },
 {
 name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
 },
 {
 name = licenseURL;
-value = "http://scripts.sil.org/OFL";
+value = "https://scripts.sil.org/OFL";
 },
 {
 name = vendorID;
@@ -162,7 +166,7 @@ value = "Noto is a trademark of Google Inc.";
 },
 {
 name = versionString;
-value = "Version 2.003";
+value = "Version 2.005";
 }
 );
 date = "2015-01-16 16:27:17 +0000";
@@ -180,7 +184,7 @@ code = "lookup SinglePositioning1 {\012    lookupflag 0;\012    ;\012    pos dot
 name = SinglePositioning1;
 },
 {
-code = "lookup SinglePositioning2 {\012    lookupflag 0;\012    ;\012    # Original source: 1 \012    pos [a_ahom alt_ba_ahom alt_ga_ahom alt_ta_ahom ba_ahom bha_ahom cha_ahom da_ahom dha_ahom dottedCircle ga_ahom ga_ahom.alt gha_ahom ha_ahom ja_ahom jha_ahom jha_ahom.alt ka_ahom kha_ahom khra_ahom la_ahom ma_ahom na_ahom nga_ahom nya_ahom pa_ahom pha_ahom phra_ahom ra_ahom sa_ahom t_ja_ahom ta_ahom tha_ahom] <250 0 250 0>;\012} SinglePositioning2;\012";
+code = "lookup SinglePositioning2 {\012    lookupflag 0;\012    ;\012    # Original source: 1 \012    pos [a_ahom alt_ba_ahom alt_ga_ahom alt_ta_ahom ba_ahom bha_ahom cha_ahom da_ahom dha_ahom dottedCircle ga_ahom ga_ahom.alt gha_ahom ha_ahom ja_ahom jha_ahom jha_ahom.alt ka_ahom kha_ahom khra_ahom la_ahom ma_ahom na_ahom nga_ahom nya_ahom pa_ahom pha_ahom phra_ahom ra_ahom sa_ahom ta_ahom tha_ahom] <250 0 250 0>;\012    pos t_ja_ahom <0 0 -150 0>;\012} SinglePositioning2;\012";
 name = SinglePositioning2;
 },
 {
@@ -202,7 +206,7 @@ code = "\012# o/u ligatures\012sub uSign_ahom oSign_ahom by o_u_ahom;\012sub oSi
 name = ccmp;
 },
 {
-code = "sub kha_ahom medialLigaRa_ahom by khra_ahom;\012sub alt_ta_ahom ja_ahom by t_ja_ahom;\012sub pha_ahom medialLigaRa_ahom by phra_ahom;\012";
+code = "sub kha_ahom medialLigaRa_ahom by khra_ahom;\012sub pha_ahom medialLigaRa_ahom by phra_ahom;\012\012lookup tja {\012lookupflag IgnoreMarks;\012sub alt_ta_ahom ja_ahom by t_ja_ahom;\012} tja;\012";
 name = rlig;
 },
 {
@@ -214,7 +218,7 @@ code = "# Automatic Code Start\012    pos eSign_ahom' lookup PairPositioning19 @
 name = dist;
 },
 {
-code = "# Automatic Code Start\012\012    pos aaSign_ahom <NULL> aaSign_ahom <80 0 80 0>;\012    pos iSign_ahom <NULL> ta_ahom <-120 0 -120 0>;\012    pos iSign_ahom <NULL> alt_ta_ahom <-120 0 -120 0>;\012    pos iSign_ahom <NULL> ra_ahom <-231 0 -231 0>;\012    pos iSign_ahom <NULL> ga_ahom <-100 0 -100 0>;\012    pos iSign_ahom <NULL> alt_ga_ahom <-100 0 -100 0>;\012    pos iSign_ahom <NULL> t_ja_ahom <-120 0 -120 0>;\012    pos iiSign_ahom <NULL> ta_ahom <-120 0 -120 0>;\012    pos iiSign_ahom <NULL> alt_ta_ahom <-120 0 -120 0>;\012    pos iiSign_ahom <NULL> ra_ahom <-231 0 -231 0>;\012    pos iiSign_ahom <NULL> ga_ahom <-100 0 -100 0>;\012    pos iiSign_ahom <NULL> alt_ga_ahom <-100 0 -100 0>;\012    pos iiSign_ahom <NULL> t_ja_ahom <-120 0 -120 0>;\012    pos awSign_ahom <NULL> ta_ahom <-120 0 -120 0>;\012    pos awSign_ahom <NULL> alt_ta_ahom <-120 0 -120 0>;\012    pos awSign_ahom <NULL> ra_ahom <-231 0 -231 0>;\012    pos awSign_ahom <NULL> ga_ahom <-100 0 -100 0>;\012    pos awSign_ahom <NULL> alt_ga_ahom <-100 0 -100 0>;\012    pos awSign_ahom <NULL> t_ja_ahom <-120 0 -120 0>;\012    pos aiSign_ahom <NULL> ta_ahom <-120 0 -120 0>;\012    pos aiSign_ahom <NULL> alt_ta_ahom <-120 0 -120 0>;\012    pos aiSign_ahom <NULL> ra_ahom <-231 0 -231 0>;\012    pos aiSign_ahom <NULL> ga_ahom <-100 0 -100 0>;\012    pos aiSign_ahom <NULL> alt_ga_ahom <-100 0 -100 0>;\012    pos aiSign_ahom <NULL> t_ja_ahom <-120 0 -120 0>;\012\012# ufo2ft isn't doing mark/base kerning for me so I'm just gonna do it myself\012pos na_ahom 70 aaSign_ahom;\012";
+code = "# Automatic Code Start\012	lookupflag IgnoreMarks;\012\012    pos aaSign_ahom <NULL> aaSign_ahom <80 0 80 0>;\012    pos iSign_ahom <NULL> ta_ahom <-120 0 -120 0>;\012    pos iSign_ahom <NULL> alt_ta_ahom <-120 0 -120 0>;\012    pos iSign_ahom <NULL> ra_ahom <-231 0 -231 0>;\012    pos iSign_ahom <NULL> ga_ahom <-100 0 -100 0>;\012    pos iSign_ahom <NULL> alt_ga_ahom <-100 0 -100 0>;\012    pos iSign_ahom <NULL> t_ja_ahom <-120 0 -120 0>;\012    pos iiSign_ahom <NULL> ta_ahom <-120 0 -120 0>;\012    pos iiSign_ahom <NULL> alt_ta_ahom <-120 0 -120 0>;\012    pos iiSign_ahom <NULL> ra_ahom <-231 0 -231 0>;\012    pos iiSign_ahom <NULL> ga_ahom <-100 0 -100 0>;\012    pos iiSign_ahom <NULL> alt_ga_ahom <-100 0 -100 0>;\012    pos iiSign_ahom <NULL> t_ja_ahom <-120 0 -120 0>;\012    pos awSign_ahom <NULL> ta_ahom <-120 0 -120 0>;\012    pos awSign_ahom <NULL> alt_ta_ahom <-120 0 -120 0>;\012    pos awSign_ahom <NULL> ra_ahom <-231 0 -231 0>;\012    pos awSign_ahom <NULL> ga_ahom <-100 0 -100 0>;\012    pos awSign_ahom <NULL> alt_ga_ahom <-100 0 -100 0>;\012    pos awSign_ahom <NULL> t_ja_ahom <-120 0 -120 0>;\012    pos aiSign_ahom <NULL> ta_ahom <-120 0 -120 0>;\012    pos aiSign_ahom <NULL> alt_ta_ahom <-120 0 -120 0>;\012    pos aiSign_ahom <NULL> ra_ahom <-231 0 -231 0>;\012    pos aiSign_ahom <NULL> ga_ahom <-100 0 -100 0>;\012    pos aiSign_ahom <NULL> alt_ga_ahom <-100 0 -100 0>;\012    pos aiSign_ahom <NULL> t_ja_ahom <-120 0 -120 0>;\012\012# ufo2ft isn't doing mark/base kerning for me so I'm just gonna do it myself\012pos na_ahom 70 aaSign_ahom;\012";
 name = kern;
 },
 {
@@ -224,6 +228,10 @@ name = mark;
 {
 code = "# Automatic Code Start\012";
 name = blwm;
+},
+{
+code = "# Automatic Code Start";
+name = abvm;
 }
 );
 fontMaster = (
@@ -6700,13 +6708,13 @@ category = Letter;
 },
 {
 glyphname = t_ja_ahom;
-lastChange = "2019-08-07 17:52:21 +0000";
+lastChange = "2022-06-22 11:25:40 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor10;
-position = "{0, 0}";
+position = "{1100, 0}";
 },
 {
 name = Anchor11;
@@ -6714,7 +6722,7 @@ position = "{1060, 0}";
 },
 {
 name = Anchor12;
-position = "{0, 0}";
+position = "{975, 0}";
 },
 {
 name = Anchor13;
@@ -6738,7 +6746,7 @@ position = "{1080, 0}";
 },
 {
 name = Anchor9;
-position = "{0, 0}";
+position = "{712, 0}";
 }
 );
 layerId = UUID0;
@@ -6832,6 +6840,7 @@ width = 1142;
 }
 );
 category = Letter;
+subCategory = Other;
 },
 {
 glyphname = i_u_ahom;
@@ -7295,5 +7304,5 @@ manufacturer = "Monotype Imaging Inc.";
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 4;
+versionMinor = 5;
 }
