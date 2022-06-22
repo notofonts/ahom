@@ -29,7 +29,7 @@ code = "a_ahom alt_ba_ahom alt_ga_ahom alt_ta_ahom ba_ahom bha_ahom cha_ahom da_
 name = class18;
 }
 );
-copyright = "Copyright 2018-2022 Google Inc. All Rights Reserved.";
+copyright = "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/ahom)";
 customParameters = (
 {
 name = glyphOrder;
