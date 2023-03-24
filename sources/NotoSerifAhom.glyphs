@@ -166,7 +166,7 @@ value = "Noto is a trademark of Google Inc.";
 },
 {
 name = versionString;
-value = "Version 2.005";
+value = "Version 2.006";
 }
 );
 date = "2015-01-16 16:27:17 +0000";
@@ -8431,5 +8431,5 @@ manufacturer = "Monotype Imaging Inc.";
 manufacturerURL = "http://www.google.com/get/noto/";
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 5;
+versionMinor = 6;
 }
