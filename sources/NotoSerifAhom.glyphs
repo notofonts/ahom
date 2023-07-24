@@ -202,11 +202,11 @@ name = Languagesystems;
 );
 features = (
 {
-code = "\012# o/u ligatures\012sub uSign_ahom oSign_ahom by o_u_ahom;\012sub oSign_ahom uSign_ahom by o_u_ahom;\012\012# Medial ra/la forms\012sub @class4 medialRa_ahom' by medialRa_ahom.desc;\012sub @class5 medialRa_ahom' by medialRa_ahom.sm;\012sub @class6 medialLa_ahom' by medialLa_ahom.sm;\012\012# i/u ligatures\012sub @class1 eSign_ahom [iSign_ahom uSign_ahom]' lookup LigatureSubstitution2 [iSign_ahom uSign_ahom]';\012sub @class1 [medialLa_ahom medialLa_ahom.sm medialLigaRa_ahom] [iSign_ahom uSign_ahom]' lookup LigatureSubstitution2 [iSign_ahom uSign_ahom]';\012sub @class1 [iSign_ahom uSign_ahom]' lookup LigatureSubstitution2 [iSign_ahom uSign_ahom]';\012";
+code = "\012# o/u ligatures\012sub uSign_ahom oSign_ahom by o_u_ahom;\012sub oSign_ahom uSign_ahom by o_u_ahom;\012\012# Medial ra/la forms\012sub @class4 medialRa_ahom' by medialRa_ahom.desc;\012sub @class5 medialRa_ahom' by medialRa_ahom.sm;\012sub @class6 medialLa_ahom' by medialLa_ahom.sm;\012\012";
 name = ccmp;
 },
 {
-code = "sub kha_ahom medialLigaRa_ahom by khra_ahom;\012sub pha_ahom medialLigaRa_ahom by phra_ahom;\012\012lookup tja {\012lookupflag IgnoreMarks;\012sub alt_ta_ahom ja_ahom by t_ja_ahom;\012} tja;\012";
+code = "sub kha_ahom medialLigaRa_ahom by khra_ahom;\012sub pha_ahom medialLigaRa_ahom by phra_ahom;\012\012lookup tja {\012lookupflag IgnoreMarks;\012sub alt_ta_ahom ja_ahom by t_ja_ahom;\012} tja;\012\012# i/u ligatures\012lookup iulig {\012lookupflag UseMarkFilteringSet [iSign_ahom uSign_ahom];\012sub @class1 [iSign_ahom uSign_ahom]' lookup LigatureSubstitution2 [iSign_ahom uSign_ahom]';\012} iulig;";
 name = rlig;
 },
 {
