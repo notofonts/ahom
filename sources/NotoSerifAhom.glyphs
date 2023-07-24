@@ -196,7 +196,7 @@ code = "lookup PairPositioning19 {\012    pos eSign_ahom ka_ahom 60;\012    pos 
 name = PairPositioning19;
 },
 {
-code = "languagesystem ahom dflt;\012";
+code = "languagesystem DFLT dflt;\012languagesystem ahom dflt;\012";
 name = Languagesystems;
 }
 );
