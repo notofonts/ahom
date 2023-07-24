@@ -5,7 +5,7 @@ DisplayStrings = (
 );
 classes = (
 {
-code = "a_ahom alt_ba_ahom alt_ga_ahom alt_ta_ahom ba_ahom bha_ahom cha_ahom dha_ahom ga_ahom ga_ahom.alt gha_ahom ha_ahom ja_ahom jha_ahom jha_ahom.alt ka_ahom kha_ahom khra_ahom la_ahom ma_ahom pa_ahom pha_ahom phra_ahom ra_ahom sa_ahom t_ja_ahom ta_ahom tha_ahom";
+code = "a_ahom alt_ba_ahom alt_ga_ahom alt_ta_ahom ba_ahom bha_ahom cha_ahom dha_ahom ga_ahom ga_ahom.alt gha_ahom ha_ahom ja_ahom jha_ahom jha_ahom.alt ka_ahom kha_ahom khra_ahom la_ahom ma_ahom pa_ahom pha_ahom phra_ahom ra_ahom sa_ahom t_ja_ahom ta_ahom tha_ahom na_ahom nya_ahom da_ahom nga_ahom";
 name = class1;
 },
 {
