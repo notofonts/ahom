@@ -1,8 +1,24 @@
-## Fontbakery report
+## FontBakery report
 
-Fontbakery version: 0.8.13
+fontbakery version: 0.9.1
 
-<details><summary><b>[11] NotoSerifAhom-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Version number has increased since previous release on Google Fonts? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/version_bump">com.google.fonts/check/version_bump</a>)</summary><div>
+<details><summary><b>[16] NotoSerifAhom-Regular.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Checking OS/2 achVendID. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vendor_id">com.google.fonts/check/vendor_id</a>)</summary><div>
+
+
+* 💔 **ERROR** The condition <FontBakeryCondition:registered_vendor_ids> had an error: ModuleNotFoundError: No module named 'bs4'
+</div></details><details><summary>💔 <b>ERROR:</b> Show hinting filesize impact. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/hinting_impact">com.google.fonts/check/hinting_impact</a>)</summary><div>
+
+
+* 💔 **ERROR** The condition <FontBakeryCondition:hinting_stats> had an error: ModuleNotFoundError: No module named 'dehinter'
+</div></details><details><summary>💔 <b>ERROR:</b> Check that no collisions are found while shaping (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/shaping/collides">com.google.fonts/check/shaping/collides</a>)</summary><div>
+
+
+* 💔 **ERROR** Failed with ModuleNotFoundError: No module named 'collidoscope'
+</div></details><details><summary>💔 <b>ERROR:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* 💔 **ERROR** Failed with ModuleNotFoundError: No module named 'shaperglot'
+</div></details><details><summary>🔥 <b>FAIL:</b> Version number has increased since previous release on Google Fonts? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/version_bump">com.google.fonts/check/version_bump</a>)</summary><div>
 
 
 * 🔥 **FAIL** Version number 2.0059967041015625 is equal to version on Google Fonts.
@@ -11,12 +27,15 @@ Fontbakery version: 0.8.13
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
-</div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure component transforms do not perform scaling or rotation. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/transformed_components">com.google.fonts/check/transformed_components</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The following glyphs had components with scaling or rotation
+or inverted outline direction:
 
-The dot of soft dotted characters should disappear in other cases, for example: į̆ į̇ į̈ į̊ į̋ į̒ į̦̀ į̦́ į̦̂ į̦̃ į̦̄ į̦̆ į̦̇ į̦̈ į̦̊ į̦̋ į̦̌ į̦̒ į̧̀ į̧́ [code: soft-dotted]
+* exclamdown (component exclam)
+* questiondown (component question)
+ [code: transformed-components]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check that texts shape as per expectation (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/shaping/regression">com.google.fonts/check/shaping/regression</a>)</summary><div>
 
 
@@ -54,12 +73,18 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 
 
 
-<pre>Got     : na_ahom=0+648|i_u_ahom=0+275</pre>
+<pre>Got     : na_ahom=0+879|iSign_ahom=0@-431,200+0|uSign_ahom=0@-234,0+0</pre>
 
 
-Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 923 2655" transform="matrix(1 0 0 -1 0 0)">
+
+<pre>                                      ^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 879 2655" transform="matrix(1 0 0 -1 0 0)">
 <path d="M481.0,-24.0Q462.0,-24.0 450.0,-18.0Q438.0,-12.0 438.0,1.0L438.0,156.0L261.0,44.0Q247.0,35.0 225.0,22.5Q203.0,10.0 182.0,0.0Q161.0,-10.0 148.0,-10.0Q132.0,-10.0 126.0,-2.0Q120.0,6.0 120.0,19.0L120.0,525.0Q120.0,539.0 135.0,544.5Q150.0,550.0 166.0,550.0Q184.0,550.0 197.0,544.0Q210.0,538.0 210.0,525.0L210.0,425.0Q248.0,457.0 293.5,488.0Q339.0,519.0 382.0,539.5Q425.0,560.0 456.0,560.0Q503.0,560.0 525.5,537.0Q548.0,514.0 548.0,476.0Q548.0,435.0 530.5,417.0Q513.0,399.0 487.0,399.0Q462.0,399.0 450.5,411.0Q439.0,423.0 435.0,436.0Q431.0,450.0 424.0,460.5Q417.0,471.0 392.0,471.0Q375.0,471.0 342.5,454.5Q310.0,438.0 274.5,413.0Q239.0,388.0 210.0,362.0L210.0,81.0L424.0,214.0Q444.0,227.0 464.5,237.5Q485.0,248.0 498.0,248.0Q513.0,248.0 520.5,236.5Q528.0,225.0 528.0,213.0L528.0,1.0Q528.0,-12.0 515.5,-18.0Q503.0,-24.0 481.0,-24.0Z" transform="translate(0, 1175)"/>
-<path d="M228.0,-140.0Q194.0,-140.0 158.0,-132.0Q122.0,-124.0 92.0,-102.5Q62.0,-81.0 43.5,-42.5Q25.0,-4.0 25.0,56.0L25.0,490.0Q-29.0,493.0 -64.5,544.5Q-100.0,596.0 -100.0,701.0Q-100.0,741.0 -86.5,787.0Q-73.0,833.0 -47.5,874.5Q-22.0,916.0 14.5,942.0Q51.0,968.0 98.0,968.0Q142.0,968.0 171.5,941.5Q201.0,915.0 216.0,870.0Q231.0,825.0 231.0,770.0Q231.0,679.0 197.0,613.5Q163.0,548.0 115.0,516.0L115.0,60.0Q115.0,5.0 128.0,-25.0Q141.0,-55.0 164.5,-66.5Q188.0,-78.0 219.0,-78.0Q252.0,-78.0 277.0,-73.0Q302.0,-68.0 321.0,-60.0Q340.0,-52.0 350.0,-52.0Q360.0,-52.0 367.5,-58.0Q375.0,-64.0 375.0,-75.0Q375.0,-90.0 359.5,-102.0Q344.0,-114.0 320.0,-122.5Q296.0,-131.0 271.0,-135.5Q246.0,-140.0 228.0,-140.0ZM53.0,554.0Q94.0,554.0 114.5,584.5Q135.0,615.0 142.0,664.5Q149.0,714.0 149.0,772.0Q149.0,806.0 144.0,836.0Q139.0,866.0 124.5,885.0Q110.0,904.0 83.0,904.0Q56.0,904.0 33.0,886.0Q10.0,868.0 -4.0,821.5Q-18.0,775.0 -18.0,691.0Q-18.0,628.0 0.5,591.0Q19.0,554.0 53.0,554.0Z" transform="translate(648, 1175)"/>
+<path d="M33.0,490.0Q-24.0,490.0 -62.0,541.0Q-100.0,592.0 -100.0,701.0Q-100.0,741.0 -86.5,787.0Q-73.0,833.0 -47.5,874.5Q-22.0,916.0 14.5,942.0Q51.0,968.0 98.0,968.0Q142.0,968.0 171.5,941.5Q201.0,915.0 216.0,870.0Q231.0,825.0 231.0,770.0Q231.0,685.0 201.5,622.0Q172.0,559.0 126.5,524.5Q81.0,490.0 33.0,490.0ZM53.0,554.0Q94.0,554.0 114.5,584.5Q135.0,615.0 142.0,664.5Q149.0,714.0 149.0,772.0Q149.0,806.0 144.0,836.0Q139.0,866.0 124.5,885.0Q110.0,904.0 83.0,904.0Q56.0,904.0 33.0,886.0Q10.0,868.0 -4.0,821.5Q-18.0,775.0 -18.0,691.0Q-18.0,628.0 0.5,591.0Q19.0,554.0 53.0,554.0Z" transform="translate(448, 1375)"/>
+<path d="M-7.0,-330.0Q-41.0,-330.0 -77.0,-322.0Q-113.0,-314.0 -143.0,-292.5Q-173.0,-271.0 -191.5,-232.5Q-210.0,-194.0 -210.0,-134.0L-210.0,-95.0Q-210.0,-82.0 -196.0,-76.0Q-182.0,-70.0 -165.0,-70.0Q-148.0,-70.0 -134.0,-76.0Q-120.0,-82.0 -120.0,-95.0L-120.0,-130.0Q-120.0,-185.0 -107.0,-215.0Q-94.0,-245.0 -70.5,-256.5Q-47.0,-268.0 -16.0,-268.0Q17.0,-268.0 43.0,-263.0Q69.0,-258.0 97.0,-245.0Q103.0,-242.0 111.0,-242.0Q124.0,-242.0 132.0,-248.0Q140.0,-254.0 140.0,-265.0Q140.0,-280.0 124.5,-292.0Q109.0,-304.0 85.0,-312.5Q61.0,-321.0 36.0,-325.5Q11.0,-330.0 -7.0,-330.0Z" transform="translate(645, 1175)"/>
 </svg>
  Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 879 2655" transform="matrix(1 0 0 -1 0 0)">
 <path d="M481.0,-24.0Q462.0,-24.0 450.0,-18.0Q438.0,-12.0 438.0,1.0L438.0,156.0L261.0,44.0Q247.0,35.0 225.0,22.5Q203.0,10.0 182.0,0.0Q161.0,-10.0 148.0,-10.0Q132.0,-10.0 126.0,-2.0Q120.0,6.0 120.0,19.0L120.0,525.0Q120.0,539.0 135.0,544.5Q150.0,550.0 166.0,550.0Q184.0,550.0 197.0,544.0Q210.0,538.0 210.0,525.0L210.0,425.0Q248.0,457.0 293.5,488.0Q339.0,519.0 382.0,539.5Q425.0,560.0 456.0,560.0Q503.0,560.0 525.5,537.0Q548.0,514.0 548.0,476.0Q548.0,435.0 530.5,417.0Q513.0,399.0 487.0,399.0Q462.0,399.0 450.5,411.0Q439.0,423.0 435.0,436.0Q431.0,450.0 424.0,460.5Q417.0,471.0 392.0,471.0Q375.0,471.0 342.5,454.5Q310.0,438.0 274.5,413.0Q239.0,388.0 210.0,362.0L210.0,81.0L424.0,214.0Q444.0,227.0 464.5,237.5Q485.0,248.0 498.0,248.0Q513.0,248.0 520.5,236.5Q528.0,225.0 528.0,213.0L528.0,1.0Q528.0,-12.0 515.5,-18.0Q503.0,-24.0 481.0,-24.0Z" transform="translate(0, 1175)"/>
@@ -155,6 +180,10 @@ Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56
 
 
 * ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
+</div></details><details><summary>⚠ <b>WARN:</b> Check if uppercase glyphs are vertically centered. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/caps_vertically_centered">com.google.fonts/check/caps_vertically_centered</a>)</summary><div>
+
+
+* ⚠ **WARN** Uppercase glyphs are not vertically centered in the em box. [code: vertical-metrics-not-centered]
 </div></details><details><summary>⚠ <b>WARN:</b> Font has **proper** whitespace glyph names? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames">com.google.fonts/check/whitespace_glyphnames</a>)</summary><div>
 
 
@@ -174,7 +203,7 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
-	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
 
 	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
@@ -210,7 +239,7 @@ minus
 
 	* semicolon (U+003B): X=132.0,Y=1.0 (should be at baseline 0?)
 
-	* G (U+0047): X=519.0,Y=1.5 (should be at baseline 0?) 
+	* G (U+0047): X=519.0,Y=1.5 (should be at baseline 0?)
 
 	* 86 more.
 
@@ -233,8 +262,8 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 4 | 7 | 117 | 7 | 111 | 0 |
-| 0% | 2% | 3% | 48% | 3% | 45% | 0% |
+| 4 | 4 | 8 | 118 | 6 | 110 | 0 |
+| 2% | 2% | 3% | 47% | 2% | 44% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
