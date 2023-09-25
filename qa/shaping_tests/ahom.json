@@ -1,44 +1,43 @@
 {
     "tests": [
-        {
-            "expectation": "dha_ahom=0+1036|ga_ahom=1+836",
-            "input": "𑜔𑜕",
-            "note": "notofonts/noto-fonts#1360"
-        },
-        {
-            "expectation": "na_ahom=0+879|iSign_ahom=0@-231,0+0|uSign_ahom=0@-234,0+0",
-            "input": "𑜃𑜢𑜤",
-            "note": "notofonts/noto-fonts#1372"
-        },
-        {
-            "expectation": "na_ahom=0+879|iSign_ahom=0@-231,0+0",
-            "input": "𑜃𑜢",
-            "note": "notofonts/noto-fonts#1372"
-        },
-        {
-            "expectation": "khra_ahom=0+844|phra_ahom=2+1039",
-            "input": "𑜁𑜟𑜇𑜟",
-            "note": "notofonts/noto-fonts#1359"
-        },
-        {
-            "expectation": "na_ahom=0+648|virama_ahom=0@37,0+0|virama_ahom=0@367,-30+0",
-            "input": "𑜃𑜫𑜫",
-            "note": "notofonts/noto-fonts#1358"
-        },
-        {
-            "expectation": "four_ahom=0+1256",
-            "input": "𑜴",
-            "note": "notofonts/noto-fonts#1361"
-        },
-        {
-            "expectation": "na_ahom=0+718|aaSign_ahom=0+264|space=2+220|na_ahom=3+718|medialLa_ahom.sm=3@-38,0+0|aaSign_ahom=3+264",
-            "input": "𑜃𑜡 𑜃𑜝𑜡",
-            "note": "#1"
-        },
-        {
-            "input": "𑜅𑜞𑜊 𑜅𑜦𑜊 𑜅𑜝𑜊 𑜀𑜝",
-            "expectation": "t_ja_ahom=0+992|medialRa_ahom.sm=0@-280,0+0|space=3+220|eSign_ahom=4+570|t_ja_ahom=4+1142|space=7+220|t_ja_ahom=8+1142|medialLa_ahom.sm=8@-167,0+0|space=11+220|ka_ahom=12+944|medialLa_ahom=12@16,0+0",
-            "note": "#3"
-        }
-    ]
+    {
+        "expectation": "dha_ahom=0+1036|ga_ahom=1+836",
+        "input": "𑜔𑜕",
+        "note": "notofonts/noto-fonts#1360"
+    },
+    {
+        "expectation": "na_ahom=0+879|iSign_ahom=0@-431,200+0|uSign_ahom=0@-234,0+0",
+        "input": "𑜃𑜢𑜤",
+        "note": "notofonts/noto-fonts#1372"
+    },
+    {
+        "expectation": "na_ahom=0+879|iSign_ahom=0@-231,0+0",
+        "input": "𑜃𑜢",
+        "note": "notofonts/noto-fonts#1372"
+    },
+    {
+        "expectation": "khra_ahom=0+844|phra_ahom=2+1039",
+        "input": "𑜁𑜟𑜇𑜟",
+        "note": "notofonts/noto-fonts#1359"
+    },
+    {
+        "expectation": "na_ahom=0+648|virama_ahom=0@37,0+0|virama_ahom=0@367,-30+0",
+        "input": "𑜃𑜫𑜫",
+        "note": "notofonts/noto-fonts#1358"
+    },
+    {
+        "expectation": "four_ahom=0+1256",
+        "input": "𑜴",
+        "note": "notofonts/noto-fonts#1361"
+    },
+    {
+        "expectation": "na_ahom=0+718|aaSign_ahom=0+264|space=2+220|na_ahom=3+718|medialLa_ahom.sm=3@-38,0+0|aaSign_ahom=3+264",
+        "input": "𑜃𑜡 𑜃𑜝𑜡",
+        "note": "#1"
+    },
+    {
+        "input": "𑜅𑜞𑜊 𑜅𑜦𑜊 𑜅𑜝𑜊 𑜀𑜝",
+        "expectation": "t_ja_ahom=0+992|medialRa_ahom.sm=0@-280,0+0|space=3+220|eSign_ahom=4+570|t_ja_ahom=4+1142|space=7+220|t_ja_ahom=8+1142|medialLa_ahom.sm=8@-167,0+0|space=11+220|ka_ahom=12+944|medialLa_ahom=12@16,0+0",
+        "note": "#3"
+    }]
 }
