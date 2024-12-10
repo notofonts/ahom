@@ -1,7 +1,8 @@
 {
-.appVersion = "3205";
+.appVersion = "3217";
 DisplayStrings = (
-"/t_ja_ahom/uSign_ahom"
+"/amSign_ahom/uSign_ahom",
+"/am_virama_ahom/am_virama_ahom"
 );
 classes = (
 {
@@ -176,7 +177,7 @@ disablesAutomaticAlignment = 1;
 familyName = "Noto Serif Ahom";
 featurePrefixes = (
 {
-code = "lookup IULigature {\012    sub iSign_ahom uSign_ahom by i_u_ahom;\012    sub uSign_ahom iSign_ahom by i_u_ahom;\012} IULigature;\012";
+code = "lookup IULigature {\012    sub iSign_ahom uSign_ahom by i_u_ahom;\012    sub uSign_ahom iSign_ahom by i_u_ahom;\012} IULigature;\012\012lookup am_virama_ligature {\012	sub amSign_ahom virama_ahom by am_virama_ahom;\012} am_virama_ligature;";
 name = IULigature;
 },
 {
@@ -206,7 +207,7 @@ code = "\012# o/u ligatures\012sub uSign_ahom oSign_ahom by o_u_ahom;\012sub oSi
 name = ccmp;
 },
 {
-code = "sub kha_ahom medialLigaRa_ahom by khra_ahom;\012sub pha_ahom medialLigaRa_ahom by phra_ahom;\012\012lookup tja {\012lookupflag IgnoreMarks;\012sub alt_ta_ahom ja_ahom by t_ja_ahom;\012} tja;\012\012# i/u ligatures\012lookup iulig {\012# See #16\012# \"Even with the use of U+1171E AHOM CONSONANT SIGN MEDIAL RA, the contextual ligature should appear\"\012lookupflag UseMarkFilteringSet [iSign_ahom uSign_ahom];\012\012# \"the combination of AHOM VOWEL SIGN I (U+11722) and AHOM VOWEL SIGN U (U+11724) should convert\012# to the contextual ligature after all consonants except NA, NYA, DA and NGA\"\012ignore sub [na_ahom nya_ahom da_ahom nga_ahom] [iSign_ahom uSign_ahom]' [iSign_ahom uSign_ahom]';\012sub @class1 [iSign_ahom uSign_ahom]' lookup IULigature [iSign_ahom uSign_ahom]';\012} iulig;\012";
+code = "sub kha_ahom medialLigaRa_ahom by khra_ahom;\012sub pha_ahom medialLigaRa_ahom by phra_ahom;\012\012lookup tja {\012lookupflag IgnoreMarks;\012sub alt_ta_ahom ja_ahom by t_ja_ahom;\012} tja;\012\012# i/u ligatures\012lookup iulig {\012# See #16\012# \"Even with the use of U+1171E AHOM CONSONANT SIGN MEDIAL RA, the contextual ligature should appear\"\012lookupflag UseMarkFilteringSet [iSign_ahom uSign_ahom];\012\012# \"the combination of AHOM VOWEL SIGN I (U+11722) and AHOM VOWEL SIGN U (U+11724) should convert\012# to the contextual ligature after all consonants except NA, NYA, DA and NGA\"\012ignore sub [na_ahom nya_ahom da_ahom nga_ahom] [iSign_ahom uSign_ahom]' [iSign_ahom uSign_ahom]';\012sub @class1 [iSign_ahom uSign_ahom]' lookup IULigature [iSign_ahom uSign_ahom]';\012} iulig;\012\012# Handle repeated am-virama pairs, see #22\012lookup am_virama {\012lookupflag UseMarkFilteringSet [amSign_ahom virama_ahom];\012sub amSign_ahom' lookup am_virama_ligature virama_ahom' lookup am_virama_ligature  amSign_ahom' lookup am_virama_ligature virama_ahom;\012} am_virama;\012";
 name = rlig;
 },
 {
@@ -5374,7 +5375,7 @@ subCategory = Nonspacing;
 },
 {
 glyphname = amSign_ahom;
-lastChange = "2019-08-07 17:52:21 +0000";
+lastChange = "2024-12-10 09:03:55 +0000";
 layers = (
 {
 anchors = (
@@ -8389,6 +8390,45 @@ width = 993;
 );
 unicode = 11746;
 category = Letter;
+},
+{
+glyphname = am_virama_ahom;
+lastChange = "2024-12-10 09:09:12 +0000";
+layers = (
+{
+anchors = (
+{
+name = Anchor22;
+position = "{175, 615}";
+},
+{
+name = Anchor23;
+position = "{155, 615}";
+},
+{
+name = _Anchor15;
+position = "{-175, 630}";
+},
+{
+name = _Anchor22;
+position = "{-175, 615}";
+}
+);
+components = (
+{
+name = amSign_ahom;
+},
+{
+name = virama_ahom;
+transform = "{1, 0, 0, 1, 0, 320}";
+}
+);
+layerId = UUID0;
+width = 0;
+}
+);
+category = Mark;
+subCategory = Nonspacing;
 }
 );
 instances = (
